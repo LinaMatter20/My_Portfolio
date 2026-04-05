@@ -25,10 +25,14 @@ const SectionWrapper = ({ id, label, heading, intro, children }: SectionWrapperP
         >
           {label}
         </p>
-        {/* Heading — uses heading prop if provided, otherwise falls back to label */}
-        {heading && (
+        {/* Heading — uses heading prop if provided, otherwise label is the heading */}
+        {heading ? (
           <h2 className="font-heading text-2xl md:text-3xl mb-2" style={{ color: "#F0F4FF" }}>
             {heading}
+          </h2>
+        ) : (
+          <h2 className="font-heading text-2xl md:text-3xl mb-2" style={{ color: "#F0F4FF" }}>
+            {label}
           </h2>
         )}
         {intro && (
