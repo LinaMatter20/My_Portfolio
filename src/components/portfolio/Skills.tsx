@@ -88,6 +88,11 @@ const Skills = () => (
               </span>
             ))}
           </div>
+          {cat.note && (
+            <p className="mt-3 text-xs" style={{ color: "#8892B0" }}>
+              {cat.note}
+            </p>
+          )}
         </motion.div>
       ))}
     </div>
