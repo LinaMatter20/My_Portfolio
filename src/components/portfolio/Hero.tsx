@@ -127,7 +127,9 @@ const Hero = () => (
               View My Work
             </a>
             <a
-              href="#contact"
+              href="https://drive.google.com/file/d/1qTQnVvwu85EDvGGHK1iwPezyhiDngXzZ/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-lg font-heading font-semibold text-sm transition-all duration-300 hover:scale-105"
               style={{
                 border: "1px solid #00D4AA",
@@ -187,24 +189,17 @@ const Hero = () => (
               backgroundColor: "#0D1526",
             }}
           >
-            {/* Photo — replace /lina-photo.jpg with actual image */}
             <img
               src="/lina-photo.jpg"
               alt="Lina Matter"
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Hide broken image, show placeholder
-                (e.currentTarget as HTMLImageElement).style.display = "none";
-                const placeholder = e.currentTarget.nextElementSibling as HTMLElement;
-                if (placeholder) placeholder.style.display = "flex";
-              }}
+              className="w-full h-full object-cover absolute inset-0 z-10"
             />
             <div
-              className="absolute inset-0 flex-col items-center justify-center gap-3"
-              style={{ display: "flex", color: "#8892B0" }}
+              className="absolute inset-0 flex flex-col items-center justify-center gap-3"
+              style={{ color: "#8892B0" }}
             >
               <Camera size={32} strokeWidth={1.5} />
-              <span className="text-xs">Add your photo here</span>
+              <span className="text-xs">Upload your photo here</span>
             </div>
           </div>
           {/* Mobile: circular on small screens */}

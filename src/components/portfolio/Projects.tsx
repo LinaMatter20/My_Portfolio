@@ -21,13 +21,13 @@ const projects: Project[] = [
     metrics: ["98% accuracy", "🏆 DEPI Best Project", "EGP 5,000 award"],
   },
   {
-    title: "Gene Graph Cure (GGC)",
-    badge: "🎓 Bachelor's Final Project · Alexandria University · Team",
+    title: "Gene Graph Cure",
+    badge: "🎓 Graduation Project · Alexandria University",
     badgeGold: true,
     description:
-      "A full-stack AI-powered web platform for predicting tumor drug resistance in precision oncology. Built around a custom deep learning model — GC-PGE (Gene Correlation and Pathway Graph Encoder) — the platform fuses multi-omics data (mRNA expression, mutations, copy-number variations, DNA methylation, and proteomics) to forecast resistance profiles with biological interpretability. Features include an interactive visualization dashboard for pathway- and gene-level insights, LLM-driven natural language explanations of resistance mechanisms, an AI chat assistant for in-depth result queries, and a secure user account system. Engineered for scalability and built to support researchers and clinicians in advancing precision medicine.",
-    tech: ["Python", "Graph Neural Networks", "GC-PGE", "Multi-Omics", "LLM Integration", "FastAPI", "React", "XAI", "Bioinformatics", "Deep Learning", "System Design"],
-    metrics: ["Multi-omics fusion", "LLM-powered explanations", "Full-stack deployed", "8-member research team"],
+      "AI platform predicting tumor drug resistance using Graph Neural Networks and multi-omics genetic data — fusing mRNA expression, DNA mutations, and proteomics to deliver explainable resistance insights for precision medicine.",
+    tech: ["Python", "Graph Neural Networks", "Multi-Omics", "LLM", "FastAPI", "React", "XAI"],
+    metrics: ["Genetic data fusion", "Explainable AI", "Full-stack deployed"],
   },
   {
     title: "Customer Churn Prediction & Dashboard",
