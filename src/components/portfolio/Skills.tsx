@@ -6,6 +6,7 @@ interface SkillCategory {
   title: string;
   color: string;
   skills: string[];
+  note?: string;
 }
 
 const categories: SkillCategory[] = [
@@ -45,6 +46,13 @@ const categories: SkillCategory[] = [
     color: "hsl(340, 80%, 65%)",
     skills: ["Quantum Computing (Qiskit · ALU · QWorld)"],
   },
+  {
+    emoji: "🏗️",
+    title: "System Design & Architecture",
+    color: "hsl(263, 91%, 76%)",
+    skills: ["System Design", "Software Architecture", "High-Level Design", "Data Flow Diagrams", "UML", "Component Diagrams", "Deployment Diagrams", "Scalable Systems", "REST APIs", "Microservices", "Database Schema Design", "Sequence Diagrams"],
+    note: "Designed full system architectures from scratch — including layered architectures, deployment diagrams, and database schemas for production-scale AI platforms.",
+  },
 ];
 
 const Skills = () => (
@@ -80,6 +88,11 @@ const Skills = () => (
               </span>
             ))}
           </div>
+          {cat.note && (
+            <p className="mt-3 text-xs" style={{ color: "#8892B0" }}>
+              {cat.note}
+            </p>
+          )}
         </motion.div>
       ))}
     </div>

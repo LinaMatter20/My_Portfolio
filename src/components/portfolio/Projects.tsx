@@ -21,13 +21,13 @@ const projects: Project[] = [
     metrics: ["98% accuracy", "🏆 DEPI Best Project", "EGP 5,000 award"],
   },
   {
-    title: "Google Girl Code (GGC) Project",
-    badge: "🌐 Google Initiative · Competitive Program · Team",
+    title: "Gene Graph Cure (GGC)",
+    badge: "🎓 Bachelor's Final Project · Alexandria University · Team",
     badgeGold: true,
     description:
-      "Selected for Google's Girl Code program — a competitive initiative for top female tech talent in the region. Built an AI-driven solution collaboratively, combining data science and software engineering skills under Google's mentorship and evaluation framework.",
-    tech: ["Python", "AI/ML", "Data Science", "Team Collaboration", "Google GGC"],
-    metrics: ["Google-selected program", "AI solution delivered", "Competitive cohort"],
+      "A full-stack AI-powered web platform for predicting tumor drug resistance in precision oncology. Built around a custom deep learning model — GC-PGE (Gene Correlation and Pathway Graph Encoder) — the platform fuses multi-omics data (mRNA expression, mutations, copy-number variations, DNA methylation, and proteomics) to forecast resistance profiles with biological interpretability. Features include an interactive visualization dashboard for pathway- and gene-level insights, LLM-driven natural language explanations of resistance mechanisms, an AI chat assistant for in-depth result queries, and a secure user account system. Engineered for scalability and built to support researchers and clinicians in advancing precision medicine.",
+    tech: ["Python", "Graph Neural Networks", "GC-PGE", "Multi-Omics", "LLM Integration", "FastAPI", "React", "XAI", "Bioinformatics", "Deep Learning", "System Design"],
+    metrics: ["Multi-omics fusion", "LLM-powered explanations", "Full-stack deployed", "8-member research team"],
   },
   {
     title: "Customer Churn Prediction & Dashboard",
